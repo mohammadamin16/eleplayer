@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  background-color: rgba(120, 120, 120, 0.5);
+  margin: 16px 0;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  height: 2px;
+  left: 0;
+  width: 100%;
+  border-radius: 20px;
+  opacity: 0.4;
+  background: #d9d9d9;
+}
+
+.progress {
+  position: absolute;
+  top: 0;
+  height: 2px;
+  left: 0;
+  width: 30%;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.buffer {
+  position: absolute;
+  top: 0;
+  height: 2px;
+  left: 0;
+  width: 50%;
+  border-radius: 20px;
+  opacity: 0.5;
+  background-color: #fff;
+}
+
+.dot {
+  position: absolute;
+  top: -5px;
+  left: 30%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
