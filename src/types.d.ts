@@ -11,3 +11,12 @@ declare module "*.css" {
   const styles: CSSModule;
   export default styles;
 }
+
+
+declare module "*.mkv" {
+  /**
+   * A CSS module.
+   */
+  const videoFile: string;
+  export default videoFile;
+}

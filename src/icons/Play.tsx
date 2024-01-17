@@ -1,4 +1,4 @@
-export const Play: React.FC = () => {
+export const Play: React.FC = (props: React.HTMLAttributes<SVGElement>) => {
   return (
     <svg
       width="48"
@@ -6,6 +6,7 @@ export const Play: React.FC = () => {
       viewBox="0 0 48 48"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M26.2857 15.1111C26.2857 14.4975 26.7974 14 27.4286 14H30.8571C31.4883 14 32 14.4975 32 15.1111V32.8889C32 33.5025 31.4883 34 30.8571 34H27.4286C26.7974 34 26.2857 33.5025 26.2857 32.8889V15.1111Z"

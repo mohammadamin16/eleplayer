@@ -1,25 +1,30 @@
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   position: relative;
   cursor: pointer;
-  background-color: rgba(120, 120, 120, 0.5);
+  /* background-color: rgba(120, 120, 120, 0.5); */
   margin: 16px 0;
+  height: 20px;
 }
 
 .bar {
   position: absolute;
-  top: 0;
+  top: 10;
   height: 2px;
   left: 0;
   width: 100%;
   border-radius: 20px;
   opacity: 0.4;
+  cursor: pointer;
   background: #d9d9d9;
 }
 
 .progress {
   position: absolute;
-  top: 0;
+  top: 10px;
   height: 2px;
   left: 0;
   width: 30%;
@@ -29,18 +34,20 @@
 
 .buffer {
   position: absolute;
-  top: 0;
+  top: 9px;
   height: 2px;
   left: 0;
-  width: 50%;
+  /* width will change when video loads */
+  width: 0%;
   border-radius: 20px;
   opacity: 0.5;
   background-color: #fff;
+  transition: width 0.2 ease-in-out;
 }
 
 .dot {
   position: absolute;
-  top: -5px;
+  top: 5px;
   left: 30%;
   width: 10px;
   height: 10px;
@@ -48,4 +55,18 @@
   background-color: #fff;
   transform: translateX(-50%);
   cursor: pointer;
+}
+
+.thumb {
+  position: absolute;
+  top: -5px;
+  left: 30%;
+  min-width: 90px;
+  height: 90px;
+  background-color: #fff;
+  transform: translateY(-100%) translateX(-50%);
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
 }
