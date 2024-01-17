@@ -23,7 +23,14 @@ export const Player: React.FC = () => {
   }, [videoRef]);
   return (
     <div className={styles.contaienr}>
-      <video ref={videoRef} src={testUrl} muted autoPlay />
+      
+      <video
+        crossOrigin="anonymous"
+        ref={videoRef}
+        src={testUrl}
+        muted
+        autoPlay
+      />
       <PlayerContext.Provider value={{ videoElement }}>
         <Controller />
       </PlayerContext.Provider>
